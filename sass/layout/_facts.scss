@@ -1,0 +1,11 @@
+.section--facts {
+	background: gray(2);
+}
+
+.facts__text {
+	@include limit-width();
+
+	@include media-queries(big) {
+		@include grid();
+	}
+}

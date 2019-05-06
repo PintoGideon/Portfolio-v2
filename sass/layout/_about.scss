@@ -1,0 +1,27 @@
+.section--about {
+	&__image {
+		box-shadow: $box-shadow;
+		width: 60%;
+	}
+
+	@include media-queries(big) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		text-align: left;
+		grid-column-gap: $spacer;
+		max-width: 1200px;
+		margin: 0 auto;
+
+		&__title,
+		&__subtitle,
+		&__heading,
+		&__body {
+			grid-column: 2/3;
+		}
+
+		&__image {
+			grid-row: 1/6;
+			transform: translateY(-40%);
+		}
+	}
+}

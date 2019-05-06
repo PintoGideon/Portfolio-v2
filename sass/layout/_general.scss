@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.5em 1rem;
+	border: 0;
+	margin-bottom: 0.3rem;
+	&:hover {
+		background: 'blue';
+		color: black;
+	}
+}
+
+.btn-dark {
+	@extend .btn;
+}
+
+.btn-light {
+	@extend .btn;
+}
+
+.section {
+	padding-top: 4em;
+	padding-left: $spacer;
+	padding-bottom: 4em;
+	padding-right: $spacer;
+}

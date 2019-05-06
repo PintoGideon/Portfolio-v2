@@ -1,0 +1,37 @@
+.testimonials {
+	@include limit-width();
+	margin-top: $spacer;
+
+	@include media-queries(big) {
+		@include grid();
+	}
+}
+
+.testimonial {
+	box-shadow: $box-shadow;
+	margin-bottom: $spacer;
+
+	&__body {
+		padding: $spacer;
+		color: gray(4);
+	}
+
+	&__credit {
+		background: gray(2);
+		padding: $spacer;
+	}
+
+	&__name {
+		font-weight: $fw-bold;
+		margin: 0;
+		@include underline($margin: 0.5em, $width: 50px) {
+			opacity: 0.5;
+		}
+	}
+
+	&__position {
+		font-size: 0.9em;
+		color: gray(4);
+		margin: 0;
+	}
+}

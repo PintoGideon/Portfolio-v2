@@ -1,0 +1,17 @@
+@import 'abstracts/functions';
+@import 'abstracts/colors';
+@import 'abstracts/typography';
+@import 'abstracts/mixins';
+@import 'abstracts/general';
+
+@import 'base/animations';
+@import 'base/typography';
+@import 'layout/general';
+@import 'layout/nav';
+
+@import 'layout/home';
+@import 'layout/about';
+@import 'layout/facts';
+@import 'layout/projects';
+@import 'layout/testimonial';
+@import 'layout/footer';

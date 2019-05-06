@@ -1,0 +1,164 @@
+/* Code for Grid......*/
+
+.section--projects {
+	background: gray(4);
+}
+
+.projects {
+	display: grid;
+	grid-gap: 40px;
+	grid-template-columns: repeat(3, 1fr);
+
+	.card {
+		position: relative;
+		height: 25rem;
+
+		&__side {
+			height: 25rem;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			backface-visibility: hidden;
+			border-radius: 3px;
+			overflow: hidden;
+			box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
+
+			&--front {
+				background-color: white;
+			}
+		}
+
+		&:hover {
+			transition: all 0.8s ease;
+			transform: translateY(-1rem) scale(1.03);
+		}
+
+		&__picture {
+			background-size: cover;
+			height: 20rem;
+			background-blend-mode: screen;
+
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+
+			&--2 {
+				background-image: url(../images/projects/website_02.jpg);
+			}
+
+			&--3 {
+				background-image: url(../images/projects/website_03.jpg);
+			}
+
+			&--4 {
+				background-image: url(../images/projects/website_04.jpg);
+			}
+
+			&--5 {
+				background-image: url(../images/projects/website_05.jpg);
+			}
+
+			&--6 {
+				background-image: url(../images/projects/website_06.jpg);
+			}
+			&--7 {
+				background-image: url(../images/projects/website_07.jpg);
+			}
+			&--8 {
+				background-image: url(../images/projects/website_08.jpg);
+			}
+			&--9 {
+				background-image: url(../images/projects/website_09.jpg);
+			}
+		}
+		&__heading {
+			font-size: 1.8rem;
+			font-weight: 300;
+			text-transform: uppercase;
+			text-align: right;
+			color: #fff;
+			position: absolute;
+			top: 5rem;
+			right: 1rem;
+			width: 75%;
+		}
+
+		&__heading-span {
+			padding: 1rem 1.5rem;
+			-webkit-box-decoration-break: clone;
+			box-decoration-break: clone;
+
+			&--1 {
+				background-image: linear-gradient(
+					to right bottom,
+					rgba($color-secondary-light, 0.85),
+					rgba($color-secondary-dark, 0.85)
+				);
+			}
+
+			&--2 {
+				background-image: linear-gradient(
+					to right bottom,
+					rgba($color-primary-light, 0.85),
+					rgba($color-primary-dark, 0.85)
+				);
+			}
+
+			&--3 {
+				background-image: linear-gradient(
+					to right bottom,
+					rgba($color-tertiary-light, 0.85),
+					rgba($color-tertiary-dark, 0.85)
+				);
+			}
+		}
+
+		&__details {
+			ul {
+				list-style: none;
+				width: 50%;
+				margin: 0 auto;
+
+				li {
+					text-align: center;
+
+					a {
+						font-size: 0.925rem;
+						padding: 0.5rem;
+						font-weight: $fw-normal;
+						text-decoration: none;
+						color: $color-secondary-dark;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include mediaXl {
+	.projects {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+// Desktops & Laptops
+@include mediaLg {
+	.projects {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+// Tablets & Small Laptops
+@include mediaMd {
+	.projects {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+// Smartphones
+@include mediaSm {
+	.projects {
+		grid-template-columns: 1fr;
+	}
+}

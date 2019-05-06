@@ -1,0 +1,10 @@
+.footer {
+	background: gray(4);
+	color: gray(2);
+	padding: $spacer;
+	font-weight: $fw-bold;
+
+	&__email {
+		color: $primary;
+	}
+}
