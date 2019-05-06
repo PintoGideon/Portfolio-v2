@@ -2,8 +2,7 @@
 
 This is my second version of the website using HTML and Sass. Credit to Kevin Powell and Jonas schmedtmann for their tutorials on this topic.
 
-I put some effort into building this one and there are still some design issue that need to be taken care of.
-The fourth iteration of my personal site built with Gatsby and hosted with Netlify.
+I put some effort into building this one and there are still some design issues that need to be taken care of.
 
 📢 PSA for those who want to fork or copy this repo and use it for their own site:
 
